@@ -3,6 +3,6 @@
  filter: blur(8px);
 }
 .jacket {
-    position: center;
     scale: 50%;
+    position: center;
 }
