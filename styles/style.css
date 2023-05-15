@@ -10,4 +10,5 @@
     position: center;
     repeat: no-repeat;
     size: cover;
+    object-fit: cover;
 }
