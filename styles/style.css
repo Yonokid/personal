@@ -1,16 +1,7 @@
 .blur {
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    position: center;
-    repeat: no-repeat;
-    size: cover;
-    object-fit: cover;
+    background-color: rgba(234, 53, 204, 0.8); 
+    -webkit-backdrop-filter: saturate(120%) blur(5px); 
+    backdrop-filter: saturate(120%) blur(5px);
 }
 .jacket {
     position: center;
