@@ -12,3 +12,7 @@
     size: cover;
     object-fit: cover;
 }
+.jacket {
+    position: center;
+    scale: 50%;
+}
