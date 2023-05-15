@@ -1,7 +1,6 @@
 .blur {
-    background-color: rgba(234, 53, 204, 0.8); 
-    -webkit-backdrop-filter: saturate(120%) blur(5px); 
-    backdrop-filter: saturate(120%) blur(5px);
+ -webkit-filter: blur(8px);
+ filter: blur(8px);
 }
 .jacket {
     position: center;
