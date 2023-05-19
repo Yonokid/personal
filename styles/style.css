@@ -1,6 +1,6 @@
 .blur {
- -webkit-filter: blur(8px);
- filter: blur(8px);
+ -webkit-filter: blur(10px);
+ filter: blur(10px);
 }
 .jacket {
     scale: 50%;
