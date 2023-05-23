@@ -6,3 +6,7 @@
     scale: 70%;
     position: center;
 }
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
