@@ -92,3 +92,9 @@
     width: 100%;
   }
 }
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
