@@ -43,13 +43,13 @@
   <div class="container p-5">
     <div class="row">
       <div class="col">
-        <img id="myImg" class="img-fluid" src="images/Circulation.jpeg" href="#myModal1">
+        <img id="myImg" data-modal-id="img01" class="img-fluid" src="images/Circulation.jpeg" href="#myModal1">
         <div id="myModal1" class="modal">
           <span class="close">&times;</span>
           <div class="modal-content container d-flex p-5 my-5">
             <div class="row">
                 <div class="col-md-6">
-                  <img class="img-fluid" id="img1">
+                  <img class="img-fluid" id="img01">
                     <div class="row mx-auto">
                       <div class="col">
                         <a href="https://yonokid.bandcamp.com/album/circulation"><button type="button" class="btn btn-primary my-3">BC</button></a>
@@ -97,41 +97,5 @@
       </div>
     </div>
   </div>
-  <script>
-    // Get the button that opens the modal
-var btn = document.querySelectorAll("img.img-fluid");
-
-// All page modals
-var modals = document.querySelectorAll('.modal');
-
-// Get the <span> element that closes the modal
-var spans = document.getElementsByClassName("close");
-
-// When the user clicks the button, open the modal
-for (var i = 0; i < btn.length; i++) {
- img[i].onclick = function(e) {
-    e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("href"));
-    modal.style.display = "block";
- }
-}
-
-// When the user clicks on <span> (x), close the modal
-for (var i = 0; i < spans.length; i++) {
- spans[i].onclick = function() {
-    for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-    }
- }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-     for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-     }
-    }
-}
-  </script>
+  <script type="text/javascript" src="scripts/modal.js"></script>
 </body>

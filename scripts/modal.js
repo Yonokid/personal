@@ -1,5 +1,4 @@
-// Get the button that opens the modal
-var btn = document.querySelectorAll("button.modal-button");
+var img = document.querySelectorAll("img.img-fluid");
 
 // All page modals
 var modals = document.querySelectorAll('.modal');
@@ -8,11 +7,14 @@ var modals = document.querySelectorAll('.modal');
 var spans = document.getElementsByClassName("close");
 
 // When the user clicks the button, open the modal
-for (var i = 0; i < btn.length; i++) {
+for (var i = 0; i < img.length; i++) {
  img[i].onclick = function(e) {
     e.preventDefault();
     modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
+    var modalId = e.target.getAttribute("data-modal-id");
+    var modalImg = document.getElementById(modalId);
+    modalImg.src = this.src;
  }
 }
 
