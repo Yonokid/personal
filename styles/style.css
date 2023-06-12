@@ -98,3 +98,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
