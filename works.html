@@ -16,26 +16,32 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- A grey horizontal navbar that becomes vertical on small screens -->
-  <nav class="navbar navbar-expand-sm bg-dark text-white">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-default">
     <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="images/YonokidLogo.png" alt="Yonokid" style="width:40px;">
-        </a>
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="works.html">Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div> 
-  </nav>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/YonokidLogo.png" alt="Yonokid" style="width:40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="background-color: white;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> <!-- Add ms-auto class here -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
 </head>
 <body>
 <!-- The Modal -->
